@@ -1,0 +1,25 @@
+<% include ./partials/header %>
+<div class = "container">
+    <h1>Welcome to Yelp Camp's Register Page</h1>
+    <hr>
+    <h3>As a new user, Please fill in the required fields below:</h3>
+    
+        <form action= "/register" method= "POST">
+            <div>
+                <label>Username:</label>
+                <input type= "text" name= "username" placeholder="Username">
+            </div>
+            <br>
+            <div>
+                <label>Password: </label>
+                <input type= "password" name= "password" placeholder="Password">
+                <br>
+            </div>
+            <button class= "btn btn-success">Submit Form</button>
+        </form>
+    <a href= "/login" class= "btn btn-primary">Already signed up?</a>
+    <a href= "/campgrounds" class= "btn btn-danger">Go Back</a>
+</div>
+<hr>
+
+<% include ./partials/footer %>
